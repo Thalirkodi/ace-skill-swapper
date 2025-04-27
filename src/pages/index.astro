@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Showcase from '../components/Showcase.astro';
+import Features from '../components/Features.astro';
+import Tabs from '../components/Tabs.astro';
+---
+
+<Layout>
+	<Showcase showExtra={true} />
+	<Features />
+	
+	<section class="page-content">
+		<div class="container">
+			<h2>Get Started With Ace Skill Swapper</h2>
+			<p>
+				Unlock Limitless Growth by Exchanging Knowledge With Like-Minded Individuals
+			</p>
+		
+			<Tabs headings={['Learn Any Skill, Anywhere', 'wap Knowledge Effortlessly', 'Grow Your Network and Opportunities']} contents={['Master new talents from experts around the world through easy, interactive sessions.', 'Exchange your skills with others instantly and find the perfect learning partner.', 'Connect with passionate learners and open doors to collaborations, jobs, and friendships.']} />
+
+			<h3>Start Building</h3>
+			<p>
+				At Ace Skill Swapper, growth is simple and exciting. 
+	          Learn a new skill from passionate mentors or share your talents to inspire others.
+    	      Every swap opens a new door to opportunity, collaboration, and success.
+        	  Whether you're mastering a new language, coding, designing, or public speaking —
+        	  you’ll find the perfect partners to exchange skills with and level up faster than ever before.
+			</p>
+		</div>
+	</section>
+</Layout>
